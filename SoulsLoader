@@ -15,7 +15,7 @@ local gameConfig = {
         correctKey = "FLICKX67$",
         fileName = "FlickSoulsKeys.txt"
     },
-    [79546208627805] = {
+    [126509999114328] = {
         loadstringUrl = "https://api.pastes.dev/6TYjaist0H",
         correctKey = "99NIGHTSNEWXSCRIPT",
         fileName = "99nightsnewsb.txt"
