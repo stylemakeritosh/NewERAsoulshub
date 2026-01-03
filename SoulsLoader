@@ -19,6 +19,11 @@ local gameConfig = {
         loadstringUrl = "https://api.pastes.dev/6TYjaist0H",
         correctKey = "99NIGHTSNEWXSCRIPT",
         fileName = "99nightsnewsb.txt"
+    },
+    [83645629621104] = {
+        loadstringUrl = "https://api.pastes.dev/4cE7ivJaBO",
+        correctKey = "FORSAKENXRINTOSHI21",
+        fileName = "forsakennewsoulshubera.txt"
     }    
 }
 
