@@ -8,24 +8,45 @@ local LocalPlayer = Players.LocalPlayer
 local player = LocalPlayer
 local gameId = game.PlaceId
 
--- Configuration table
+-- Configuration table with support for multiple game IDs
 local gameConfig = {
-    [136801880565837] = {
+    {
+        gameIds = {136801880565837},
         loadstringUrl = "https://raw.githubusercontent.com/stylemakeritosh/NewERAsoulshub/refs/heads/main/Flick.lua",
         correctKey = "FLICKX67$",
         fileName = "FlickSoulsKeys.txt"
     },
-    [126509999114328] = {
+    {
+        gameIds = {126509999114328},
         loadstringUrl = "https://api.pastes.dev/6TYjaist0H",
         correctKey = "99NIGHTSNEWXSCRIPT",
         fileName = "99nightsnewsb.txt"
     },
-    [83645629621104] = {
+    {
+        gameIds = {83645629621104},
         loadstringUrl = "https://api.pastes.dev/4cE7ivJaBO",
         correctKey = "FORSAKENXRINTOSHI21",
         fileName = "forsakennewsoulshubera.txt"
-    }    
+    },
+    {
+        gameIds = {7449423635, 4442272183, 2753915549},
+        loadstringUrl = "https://api.pastes.dev/htkJFY6e3K",
+        correctKey = "BLOXFRUITAIMBOTRIN71:)",
+        fileName = "bloxfruitaimbot.txt"
+    }
 }
+
+-- Helper function to check if gameId exists in any config
+local function getConfigForGameId(gameId)
+    for _, config in ipairs(gameConfig) do
+        for _, id in ipairs(config.gameIds) do
+            if id == gameId then
+                return config
+            end
+        end
+    end
+    return nil
+end
 
 -- File Operations
 local function saveKey(fileName, key)
@@ -357,7 +378,7 @@ makeDraggable(Main)
 
 -- Function to load and execute the loadstring for the current game
 local function loadGameScript()
-    local config = gameConfig[gameId]
+    local config = getConfigForGameId(gameId)
     
     if not config then
         warn("No configuration found for Game ID: " .. gameId)
