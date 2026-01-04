@@ -30,7 +30,7 @@ local gameConfig = {
     },
     {
         gameIds = {7449423635, 4442272183, 2753915549},
-        loadstringUrl = "https://api.pastes.dev/htkJFY6e3K",
+        loadstringUrl = "https://api.pastes.dev/dMyEtaEOqc",
         correctKey = "BLOXFRUITAIMBOTRIN71:)",
         fileName = "bloxfruitaimbot.txt"
     }
