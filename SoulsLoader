@@ -18,19 +18,19 @@ local gameConfig = {
     },
     {
         gameIds = {126509999114328},
-        loadstringUrl = "https://api.pastes.dev/6TYjaist0H",
+        loadstringUrl = "https://raw.githubusercontent.com/stylemakeritosh/NewERAsoulshub/refs/heads/main/99nights2026jan1-obfuscated.lua.txt",
         correctKey = "99NIGHTSNEWXSCRIPT",
         fileName = "99nightsnewsb.txt"
     },
     {
         gameIds = {83645629621104},
-        loadstringUrl = "https://api.pastes.dev/4cE7ivJaBO",
+        loadstringUrl = "https://raw.githubusercontent.com/stylemakeritosh/NewERAsoulshub/refs/heads/main/Forsaken2026jan3-obfuscated.lua.txt",
         correctKey = "FORSAKENXRINTOSHI21",
         fileName = "forsakennewsoulshubera.txt"
     },
     {
         gameIds = {7449423635, 4442272183, 2753915549},
-        loadstringUrl = "https://api.pastes.dev/o8eWjlVqOE",
+        loadstringUrl = "https://raw.githubusercontent.com/stylemakeritosh/NewERAsoulshub/refs/heads/main/Bloxaim.lua",
         correctKey = "BLOXFRUITAIMBOTRIN71:)",
         fileName = "bloxfruitaimbot.txt"
     }
